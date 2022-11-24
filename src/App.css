@@ -1,0 +1,18 @@
+.App {
+  text-align: center;
+}
+
+.background {
+  width: 100vw;
+  height: 100vh;
+  background-color: green;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+}
+
+.website {
+  width: 100vw;
+  height: 300vh;
+  background-color: red;
+}
