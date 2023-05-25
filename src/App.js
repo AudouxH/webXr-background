@@ -1,13 +1,13 @@
 import './App.css';
-import React, { useRef, useState, useEffect } from 'react';
-import { Canvas, useFrame } from '@react-three/fiber';
+import React, { useState, useEffect } from 'react';
+import { Canvas } from '@react-three/fiber';
 import LoadModel from './components/loadModel';
 import Coffee from './assets/coffee.obj';
 import Phone from './assets/phone.obj';
 import Computer from './assets/computer.obj';
 import Twitch from './assets/twitch.obj';
 import Ethereum from './assets/ethereum.obj';
-import { OrbitControls, Plane, useTexture, TorusKnot } from "@react-three/drei";
+import { OrbitControls } from "@react-three/drei";
 
 const App = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -84,9 +84,6 @@ const App = () => {
         initialRotation={[1.6, 0, -1.6]}
         scale={[0.05, 0.05, 0.05]}/>
       </Canvas>
-      </div>
-
-      <div className="website">
       </div>
 
     </div>

@@ -5,14 +5,8 @@
 .background {
   width: 100vw;
   height: 100vh;
-  background-color: green;
+  background-color: #a9a9a9;
   position: fixed;
   display: flex;
   flex-direction: row;
-}
-
-.website {
-  width: 100vw;
-  height: 300vh;
-  background-color: red;
 }
