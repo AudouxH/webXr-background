@@ -1,15 +1,10 @@
-import React from 'react';
 import { useLoader } from '@react-three/fiber';
-import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader';
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 
-const LoadModel = ({ model, position, rotation, initialRotation, scale }) => {
-  const loadedModel = useLoader(OBJLoader, model);
-
-    return (
-      <mesh scale={scale} rotation={rotation}>
-        <primitive object={loadedModel} position={position} rotation={initialRotation}/>
-      </mesh>
-    )
+const LoadModel = (model) => {
+  const loadedModel = useLoader(GLTFLoader, model);
+  
+    return (loadedModel);
   }
 
 export default LoadModel;
